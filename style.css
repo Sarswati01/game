@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+body{
+    background-color: #8CC461;
+  font-family:'Roboto', sans-serif;
+}
+.container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.upper{
+    border: 5px solid white;
+    border-radius:15px;
+    display: flex;
+    justify-content:space-between;
+    width:75%;
+    margin-top: 20px;
+}
+#gameName{
+  color:#FFFFFF;
+  font-weight:bold;
+  font-size:33px;
+  line-height:26px;; 
+  letter-spacing:8px;
+  padding:10px 0;
+  margin:1rem 3rem;
+  
+}
+
+#score{
+    display: flex;
+    width:45%;
+   margin:1rem 3rem ;
+}
+#comScore,
+#myScore{
+ background-color:#FFFFFF;
+  color:#656565;
+  width:8rem;
+  height:7.5rem;
+  box-sizing:border-box;
+  text-align:center;
+  padding:10px 9px;
+  font-weight:750;
+  font-size:13px;
+  letter-spacing:1.5px;
+  border-radius:5px;
+}
+h1{
+  color:#FFFFFF;
+  font-size:xx-large;
+
+  
+}
+#comScore{
+  margin-left: 7.9rem;
+  
+}
+#myScore{
+  margin-left: 8rem;
+}
+.lower{
+    width: 400px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url("https://raw.githubusercontent.com/codeSTACKr/rock-paper-scissors-video/87d59ddb4a104b111ab68be1a0989f718da23a5e/images/bg-triangle.svg" );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 250px 200px;
+
+}
+#rule{
+    width: 9rem;
+    height: 40px;
+    color: white;
+   letter-spacing:2px;
+    background-color:transparent;
+    border:3px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding: px;
+    font-size:20px;
+    font-weight:700;
+    cursor: pointer;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+  
+}
+#rule:hover{
+    cursor:pointer;
+  
+}
+#next{
+    width:8.5rem;
+    height: 40px;
+    letter-spacing:3px;
+    color: white;
+    background-color:transparent;
+    border: 3px solid white;
+    border-radius:8px;
+    text-align: center;
+    padding: 4px;
+    font-size:16px;
+    font-weight: 800;
+    cursor: pointer;
+    position: absolute;
+    bottom: 25px;
+    right: 185px;
+    display: none;
+}
+#next:hover{
+    background-color:transparent;
+   
+}
+.stone{
+  width: 115px;
+  height: 115px;
+  background-color: #f3f0f0;
+  border: 10px solid #0074B6;
+  border-radius: 50%;
+  margin: 30px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+ 
+ 
+}
+.paper{
+  width: 115px;
+  height: 115px;
+  background-color: #f3f0f0;
+  border: 10px solid #FFA943;
+  border-radius: 50%;
+  margin: 30px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+ 
+}
+.scissor{
+    width: 115px;
+    height: 115px;
+    background-color: #f3f0f0;
+    border:10px solid #BD00FF;
+  border-radius: 50%;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+ 
+}
+.stone:hover{
+    width: 120px;
+    height: 120px;
+    border: 7px solid #0074B6;
+   
+}
+.paper:hover{
+    width: 120px;
+    height: 120px;
+    border: 7px solid #FFA943;
+    
+}
+.scissor:hover{
+    width: 120px;
+    height: 120px;
+    border: 7px solid #BD00FF ;
+    
+}
+#rules{ 
+    background-color: #004429;
+    border: 7px solid white;
+    position: absolute;
+    right: 25px;
+    bottom: 100px; 
+    border-radius: 6.3px; 
+    height: 305px;
+    width: 240px; 
+    color: white;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    display:none;
+    font-size:14px;
+ 
+}
+li{
+  color:#fff
+}
+#cross{
+    background-color: red;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    right: -30px;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#cross:hover{
+    width: 43px;
+    height: 43px;
+    border: 3px solid white;
+}
+.contest{
+    margin: 30px;
+    display: none;
+}
+.userHand p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.pcHand p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.referee h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.referee h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    
+}
+.handImageContainer{
+    width: 110px;
+    height: 110px;
+    background-color: #f3f0f0;
+    border: 10px solid blue;
+    border-radius: 50%;
+    box-shadow: 6px 5px 39px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pcImageContainer{
+    width: 110px;
+    height: 110px;
+    background-color: #f3f0f0;
+    border: 10px solid darkgreen ;
+    border-radius: 50%;
+    box-shadow: 6px 5px 39px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.userHand, .pcHand,.referee{
+ margin: 20px;
+ text-align: center;
+ color: white;
+  letter-spacing:2px
+}
+.playAgain{
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    opacity: 80%;
+   letter-spacing:2px
+}
+.playAgain:hover{
+    transform: translate3d(0px,-2px,0px);
+}
+
+.hurray{
+
+   width: 98vw;
+   background-color:#8CC461; 
+   display: none;
+   position: absolute;
+   top: 0px;
+   bottom: 0px;
+  
+}
+.imagePortion{
+    background-image: url("images/sparkles.png" );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35% 80%;
+    height: 48vh;
+    text-align: center;    
+    
+}
+#image{
+    position:relative;
+    bottom:10%;
+    text-align: center;
+}
+.contentPortion{
+    height: 48vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    
+}
+#hurr{
+    color: white;
+    font-size: 80px;
+    margin-bottom: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+#youWon{
+    margin-top: 10px;
+    color: white;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+ #ruleOfHurray{
+    width: 90px;
+    height: 50px;
+    color: white;
+    background-color:#8CC461;
+    border: 5px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    font:larger;
+    font-weight: 900;
+    cursor: pointer;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+
+#ruleOfHurray:hover{
+    background-color: white;
+    color: black;
+} 
+
+#rulesOfHurray{
+    background-color: #004429;
+    border: 10px solid white;
+    position: absolute;
+    right: 25px;
+    bottom: 100px; 
+    border-radius: 15px; 
+    height: 300px;
+    width: 250px; 
+    color: white;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    display:none;
+}
+#crossOfHurray{
+    background-color: red;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#crossOfHurray:hover{
+    width: 43px;
+    height: 43px;
+    border: 3px solid white;
+}
+list-style:square{
+  background-color:#FFD600;
+  
+}
