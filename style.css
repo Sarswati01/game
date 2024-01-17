@@ -32,13 +32,13 @@ body{
 #score{
     display: flex;
     width:45%;
-   margin:1rem 3rem ;
+    margin:1rem 3rem ;
 }
 #comScore,
 #myScore{
  background-color:#FFFFFF;
-  color:#656565;
-  width:8rem;
+  color:black;
+  width:9rem;
   height:7.5rem;
   box-sizing:border-box;
   text-align:center;
@@ -48,18 +48,18 @@ body{
   letter-spacing:1.5px;
   border-radius:5px;
 }
-h1{
-  color:#000;
+h1 span{
+  /* color:black; */
   font-size:xx-large;
 
   
 }
 #comScore{
-  margin-left: 7.9rem;
+  margin-left: 9.5rem;
   
 }
 #myScore{
-  margin-left: 8rem;
+  margin-left:5rem;
 }
 .lower{
     width: 400px;
